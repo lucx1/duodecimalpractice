@@ -6,6 +6,12 @@ var currentType = 0;
 var currentTypeMD = 0;
 switchType(0);
 
+//some copy pasted code from stackoverflow to make page not refresh on submit
+var form = document.getElementById("myForm");
+function handleForm(event) { event.preventDefault(); }
+form.addEventListener('submit', handleForm);
+//up to here
+
 function resetPractice() {
 	a = 0;
 	b = 0;
