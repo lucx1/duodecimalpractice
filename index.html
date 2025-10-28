@@ -5,12 +5,19 @@
 	</head>
 	<body>
 		<div>
+			<p><b>Duodecimal Practice: <text id="titleInfo"></text></b></p>
 			<p id="promptp"></p>
-			<form id="myForm">
-				<input type="text" id="useranswer"><input type="submit" value="Check" onClick="submitanswer();">
-			</form>
+			<input type="text" id="useranswer"><input type="button" value="Check" onClick="submitanswer();">
 			<p id="answerreturn"></p>
 			<p id="correctanswers">You correctly answered 0 out of 0 prompts so far.</p>
+			<p>
+				<input type="button" onClick="resetPractice();" value="Reset">
+			</p>
+			<p>
+				<input type="button" id="switchM" onClick="switchType(0);" value="Switch to Multiplications"><br>
+				<input type="button" id="switchD" onClick="switchType(1);" value="Switch to Divisions"><br>
+				<input type="button" id="switchMD" onClick="switchType(2);" value="Switch to Mixed Multiplications and Divisions"><br>
+			</p>
 		</div>
 		<script src="js/scripts.js"></script>
 	</body>
