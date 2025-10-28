@@ -60,10 +60,13 @@ function switchType(x) {
 	document.getElementById("switchMD").disabled = false;
 	if (x == 0) {
 		document.getElementById("switchM").disabled = true;
+		document.getElementById("titleInfo").innerHTML = "Multiplications";
 	} else if (x == 1) {
 		document.getElementById("switchD").disabled = true;
+		document.getElementById("titleInfo").innerHTML = "Divisions";
 	} else if (x == 2) {
 		document.getElementById("switchMD").disabled = true;
+		document.getElementById("titleInfo").innerHTML = "Mixed Multiplications and Divisions";
 	}
 	resetPractice();
 }
